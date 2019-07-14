@@ -1,0 +1,6 @@
+-- Haskell Playground 1.0
+:t break
+
+splitLines "Hello world!\r\nMt name is Will"
+
+fixLines "Hello world!\r\nMt name is Will"

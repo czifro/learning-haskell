@@ -1,0 +1,9 @@
+-- Haskell Playground 1.0
+:t third
+
+third (0,0,9)
+
+:t complicated
+
+complicated (True, 1, [1,2,3], 5)
+complicated (False, 1, [1,2,3], 5)

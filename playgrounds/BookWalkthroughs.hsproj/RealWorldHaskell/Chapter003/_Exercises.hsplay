@@ -1,0 +1,10 @@
+-- Haskell Playground 1.0
+count []
+count [1]
+:t count
+mean [1,2,3]
+palindrome [1,2,3]
+
+isPalindrome "abccba"
+
+join ',' ["foo", "bar", "baz", "quux"]

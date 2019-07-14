@@ -1,3 +1,3 @@
-# setup-haskell-in-vscode
+# learning haskell
 
-Based on this tutorial: https://medium.com/@dogwith1eye/setting-up-haskell-in-vs-code-on-macos-d2cc1ce9f60a
+This contains various projects, playgrounds, and book walkthroughs that I've done in my pursuit to learn haskell

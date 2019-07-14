@@ -1,0 +1,15 @@
+-- Haskell Playground 1.0
+myInfo = Book 9 "Algebra of Programming"
+         ["Richard Bird", "Oege de Moor"]
+myInfo
+:t myInfo
+
+:t CreditCard
+
+CreditCard "123" "Will" ["Spokane", "WA"]
+
+:t bookId
+
+bookId myInfo
+
+:t Customer

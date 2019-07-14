@@ -1,0 +1,32 @@
+name: BookWalkthroughs
+version: 1.0
+cabal-version: 1.22
+build-type: Simple
+license: AllRightsReserved
+stability: experimental
+x-ghc-framework-version: 8.0.2-9.6-1
+x-last-ide-version: HfM1.6.0
+
+executable RealWorldHaskell
+    main-is: Main.hs
+    build-depends:
+        base -any
+    default-language: Haskell2010
+    other-modules:
+        Chapter002.Types
+        Chapter003.Bool
+        Chapter003.Distinction
+        Chapter003.Exercises
+        Chapter003.AlgebraicVector
+        Chapter003.ListADT
+        Chapter003.Nullable
+        Chapter003.Roygbiv
+        Chapter003.Tuple
+        Chapter003.ShapeUnion
+        Chapter003.Lending
+        Chapter003.BookStore
+        Chapter003.Add
+        Chapter004.InteractWith
+        Chapter004.SplitLines
+        Chapter001.GettingStarted
+

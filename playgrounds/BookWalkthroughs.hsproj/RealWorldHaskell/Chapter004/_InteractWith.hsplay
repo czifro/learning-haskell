@@ -1,0 +1,6 @@
+-- Haskell Playground 1.0
+:t main0
+:t return
+:t main0
+
+lines "a\r\nb"
