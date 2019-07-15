@@ -26,7 +26,9 @@ executable RealWorldHaskell
         Chapter003.Lending
         Chapter003.BookStore
         Chapter003.Add
-        Chapter004.InteractWith
+        Chapter004.Fold
         Chapter004.SplitLines
+        Chapter004.Adler32
+        Chapter004.InteractWith
         Chapter001.GettingStarted
 

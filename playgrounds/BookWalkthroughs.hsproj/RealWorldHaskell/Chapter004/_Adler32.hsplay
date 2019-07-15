@@ -1,0 +1,9 @@
+-- Haskell Playground 1.0
+:t adler32
+:t ord
+
+adler32 "Hello"
+
+adler32_try2 "Hello"
+
+adler32_foldl "Hello"
