@@ -1,0 +1,8 @@
+// Get todos
+http GET localhost:5000/todos
+
+// Create todos
+http POST localhost:5000/todos
+  title="a todo"
+  completed:=false
+  order:=1

@@ -1,0 +1,24 @@
+name:          todo-backend
+version:       0.1.0
+cabal-version: >= 1.8
+build-type:    Simple
+
+executable          todo-backend
+    hs-source-dirs: app src
+    main-is:        Main.hs
+    ghc-options:    -Wall -threaded -O2 -rtsopts -with-rtsopts=-N
+    extensions:     OverloadedStrings
+    build-depends:  base   >= 4      && < 5
+                  , scotty
+                  , aeson
+                  , http-types
+                  , monad-logger
+                  , path-pieces
+                  , persistent
+                  , persistent-sqlite
+                  , persistent-template
+                  , resourcet
+                  , text
+                  , transformers
+                  , wai
+                  , wai-extra
