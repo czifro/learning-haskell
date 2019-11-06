@@ -1,9 +1,9 @@
 module Chapter004.Adler32 where
-  
+
   import Data.Char (ord)
   import Data.Bits (shiftL, (.&.), (.|.))
   import Chapter004.Fold (_foldl)
-  
+
   base = 65521
 
   adler32 xs = helper 1 0 xs
@@ -17,7 +17,7 @@ module Chapter004.Adler32 where
                                       b' = (a' + b) `mod` base
                                   in helper (a',b') xs
             helper (a,b) _      = (b `shiftL` 16) .|. a
-            
+
   adler32_foldl xs = let (a, b) = _foldl step (1, 0) xs
                      in (b `shiftL` 16) .|. a
       where step (a, b) x = let a' = a + (ord x .&. 0xff)
