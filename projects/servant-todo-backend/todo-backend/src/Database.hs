@@ -71,9 +71,13 @@ fetchTodo tId cnf = listToMaybe <$> runDb cnf queryTodo
         where id = ?
       |] (Only tId)
 
--- updateTodo :: Int -> UpdatableTodo -> DbConfig -> IO ()
--- updateTodo id (UpdatableTodo uTitle uCompleted uOrder) cnf = runDb cnf updateTodo'
---   where
---     updateTodo' :: Connection -> IO ()
---     updateTodo' conn =
---       (updateTitleStmt, ) = case uTitle of
+updateTodo :: Int -> UpdatableTodo -> DbConfig -> IO ()
+updateTodo id (UpdatableTodo uTitle uCompleted uOrder) cnf = runDb cnf updateTodo'
+  where
+    updateTodo' :: Connection -> IO ()
+    updateTodo' conn =
+      let (updateTitleStmt, updateTitleParam) =
+        uTitle >> fmap
+        -- case uTitle of
+        -- Nothing -> "", []
+        -- Just t -> "title = ?", [Only t]

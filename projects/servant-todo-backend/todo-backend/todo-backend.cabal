@@ -17,7 +17,7 @@ category:            Web
 extra-source-files:  CHANGELOG.md
 
 library
-  -- exposed-modules:
+  exposed-modules:     Api, Models
   -- other-modules:
   -- other-extensions:
   build-depends:       aeson
